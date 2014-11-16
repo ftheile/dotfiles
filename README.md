@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-My .dot files
+.dot files from my Arch Linux machines.
