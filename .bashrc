@@ -11,6 +11,7 @@ eval $(dircolors -b)
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias zgrep='zgrep --color=auto'
+alias pactree='pactree -c'
 alias dmesg='dmesg --human'
 alias less='less -x4'
 GIT_PS1_SHOWCOLORHINTS=true
