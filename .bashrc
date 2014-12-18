@@ -15,4 +15,7 @@ alias pactree='pactree --color'
 alias dmesg='dmesg --human'
 alias less='less --tabs=4'
 GIT_PS1_SHOWCOLORHINTS=true
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\$ "'
