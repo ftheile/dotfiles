@@ -8,7 +8,7 @@
 source /usr/share/git/git-prompt.sh
 source /usr/share/doc/pkgfile/command-not-found.bash
 eval $(dircolors -b)
-alias ls='ls --color=auto'
+alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias zgrep='zgrep --color=auto'
 alias pactree='pactree --color'
