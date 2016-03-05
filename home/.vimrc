@@ -107,4 +107,4 @@ set shiftwidth=4
 colorscheme desert
 set number
 set ignorecase smartcase
-
+set laststatus=2
