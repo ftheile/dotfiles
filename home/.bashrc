@@ -5,8 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source /usr/share/git/git-prompt.sh
-source /usr/share/doc/pkgfile/command-not-found.bash
+[[ -r /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
+[[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
 eval $(dircolors -b)
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
