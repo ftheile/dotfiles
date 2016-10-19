@@ -63,4 +63,8 @@ set shiftwidth=4
 colorscheme desert
 set number
 set ignorecase smartcase
-
+set showcmd
+set cursorline
+set wildmenu
+set showmatch
+set incsearch
