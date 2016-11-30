@@ -8,9 +8,9 @@
 [[ -r /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
 [[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
 eval $(dircolors -b)
-alias ls='ls -A --color=auto'
-alias grep='grep --color=auto'
-alias zgrep='zgrep --color=auto'
+alias ls='ls -A --color'
+alias grep='grep --color'
+alias zgrep='zgrep --color'
 alias pactree='pactree --color'
 alias dmesg='dmesg --human'
 alias less='less --tabs=4'
