@@ -15,6 +15,7 @@ alias pactree='pactree --color'
 alias dmesg='dmesg --human'
 alias less='less --tabs=4'
 alias dd='dd status=progress'
+alias diff='diff --color'
 GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
