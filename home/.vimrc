@@ -58,6 +58,7 @@ if has('syntax') && has('eval')
 endif
 
 set nobackup
+set noundofile
 set tabstop=4
 set shiftwidth=4
 colorscheme desert
