@@ -13,7 +13,7 @@ alias grep='grep --color'
 alias zgrep='zgrep --color'
 alias pactree='pactree --color'
 alias dmesg='dmesg --human'
-alias less='less --tabs=4'
+alias less='less --LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --chop-long-lines --tabs=4'
 alias dd='dd status=progress'
 alias diff='diff --color'
 GIT_PS1_SHOWCOLORHINTS=true
