@@ -61,7 +61,7 @@ set nobackup
 set noundofile
 set tabstop=4
 set shiftwidth=4
-colorscheme desert
+colorscheme murphy
 set number
 set ignorecase smartcase
 set showcmd
@@ -69,3 +69,4 @@ set cursorline
 set wildmenu
 set showmatch
 set incsearch
+set title
