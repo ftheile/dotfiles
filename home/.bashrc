@@ -10,6 +10,7 @@
 eval $(dircolors -b)
 alias ls='ls -A --color'
 alias grep='grep --color'
+alias egrep='egrep --color'
 alias zgrep='zgrep --color'
 alias pactree='pactree --color'
 alias dmesg='dmesg --human'
