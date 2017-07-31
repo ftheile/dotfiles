@@ -61,7 +61,7 @@ set nobackup
 set noundofile
 set tabstop=4
 set shiftwidth=4
-colorscheme murphy
+" colorscheme murphy
 set number
 set ignorecase smartcase
 set showcmd
@@ -70,3 +70,6 @@ set wildmenu
 set showmatch
 set incsearch
 set title
+set path+=**
+set wildmenu
+command! MkTags !ctags -R --verbose .
