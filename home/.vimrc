@@ -71,5 +71,6 @@ set showmatch
 set incsearch
 set title
 set nowrap
+set ruler
 set path+=**
-command! MkTags !ctags -R --verbose .
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
