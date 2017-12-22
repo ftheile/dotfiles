@@ -68,3 +68,4 @@ set title
 set nowrap
 set path+=**
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set autoindent
