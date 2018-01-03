@@ -17,9 +17,9 @@ alias dmesg='dmesg --human'
 alias less='less --LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --chop-long-lines --tabs=4 --no-init'
 alias dd='dd status=progress'
 alias diff='diff --color'
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto verbose"
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\$ "'
