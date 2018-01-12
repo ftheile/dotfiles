@@ -23,3 +23,4 @@ GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto verbose"
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\$ "'
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
