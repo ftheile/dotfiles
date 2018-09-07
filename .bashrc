@@ -6,7 +6,8 @@
 [[ $- != *i* ]] && return
 
 [[ -r /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
-[[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
+# Makes the RPi veeery slow if command not found... :-(
+# [[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
 eval $(dircolors -b)
 alias ls='ls -A -F --color'
 alias grep='grep --color'
