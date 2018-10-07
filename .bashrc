@@ -14,7 +14,7 @@ alias egrep='egrep --color'
 alias zgrep='zgrep --color'
 alias pactree='pactree --color'
 alias dmesg='dmesg --human'
-alias less='less --LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --chop-long-lines --tabs=4 --no-init --quit-if-one-screen'
+alias less='less --LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --chop-long-lines --tabs=4 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --shift .1'
 alias dd='dd status=progress'
 alias diff='diff --color'
 HISTCONTROL=ignoreboth
