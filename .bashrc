@@ -27,3 +27,4 @@ GIT_PS1_HIDE_IF_PWD_IGNORED=1
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
+[[ -r $(which neofetch) ]] && neofetch
