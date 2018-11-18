@@ -179,6 +179,9 @@ input "1130:17:HID_046a:0011" {
 
     # move focus to the parent container
     bindsym $mod+a focus parent
+
+    gaps inner 3
+    gaps outer 3
 #
 # Scratchpad:
 #
