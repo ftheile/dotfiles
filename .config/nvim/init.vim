@@ -69,3 +69,6 @@ set nowrap
 set path+=**
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 set autoindent
+" highlight trailing spaces
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
