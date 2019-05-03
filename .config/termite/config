@@ -2,6 +2,8 @@
 #allow_bold = true
 #audible_bell = false
 #bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
 font = Monospace 11
@@ -37,18 +39,6 @@ scrollback_lines = 10000
 
 # "off", "left" or "right"
 #scrollbar = off
-
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
-
 
 [colors]
 # Base16 Material Darker
@@ -99,5 +89,16 @@ color18 = #303030
 color19 = #353535
 color20 = #B2CCD6
 color21 = #EEFFFF
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
 
 # vim: ft=dosini cms=#%s
