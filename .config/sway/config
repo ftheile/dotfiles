@@ -17,12 +17,13 @@ set $right l
 set $term termite
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu dmenu_path | dmenu | xargs swaymsg exec
+set $menu termite --name=launcher -e "bash -c 'compgen -c | sort -u | fzf | xargs -r swaymsg -t command exec'"
+for_window [app_id="^launcher$"] floating enable, border pixel 2
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/OneDrive/Bilder/Wallpaper/11062015_1.jpg fill
 #
 # Example configuration:
 #
@@ -31,26 +32,23 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 output DP-2 position 0,0
 output HDMI-A-3 position 1920,0
-output LVDS-1 disable
+# output LVDS-1 disable
 
 ### Idle configuration
 #
 # Example configuration:
 #
-#exec swayidle \
-#    timeout 300 'swaylock -c 000000' \
-#    timeout 600 'swaymsg "output * dpms off"' \
-#       resume 'swaymsg "output * dpms on"' \
-#    before-sleep 'swaylock -c 000000'
+exec swayidle -w \
+         timeout 600 'swaylock -f -c 000000' \
+         timeout 1200 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000'
 #
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
+# This will lock your screen after 600 seconds of inactivity, then turn off
+# your displays after another 600 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-exec swayidle \
-    timeout 300 'swaylock -c 000000' \
-    timeout 600 'swaymsg "output * dpms off"' \
-       resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -c 000000'
+
+exec mako
 
 ### Input configuration
 #
@@ -181,7 +179,7 @@ input "1130:17:HID_046a:0011" {
     bindsym $mod+a focus parent
 
     gaps inner 3
-    gaps outer 3
+    smart_gaps on
 #
 # Scratchpad:
 #
@@ -228,8 +226,13 @@ bindsym XF86AudioMute exec pactl set-sink-mute alsa_output.pci-0000_00_1b.0.anal
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
-#Screenshots:
+# Screenshots:
 bindsym print exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/$(date +'screenshot_%F-%T.png')
+
+# Lid switch:
+# (2019-03-20 not working yet)
+#bindswitch lid:on exec swaymsg output LVDS-1 disable
+#bindswitch lid:off exec swaymsg output LVDS-1 enable
 
 #
 # Status Bar:
@@ -240,9 +243,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%A %F %T'; do sleep 1; done
-#   status_command i3status
-#   status_command waybar
+    swaybar_command waybar
 
     colors {
         statusline #ffffff
