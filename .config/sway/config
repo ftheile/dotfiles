@@ -34,6 +34,9 @@ output DP-2 position 0,0
 output HDMI-A-3 position 1920,0
 # output LVDS-1 disable
 
+workspace 1 output DP-2
+workspace 2 output HDMI-A-3
+
 ### Idle configuration
 #
 # Example configuration:
