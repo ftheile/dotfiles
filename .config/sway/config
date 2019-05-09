@@ -79,6 +79,11 @@ input "1130:17:HID_046a:0011" {
     repeat_rate 20
 }
 
+# Touchpad:
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+    tap enabled
+}
+
 ### Key bindings
 #
 # Basics:
