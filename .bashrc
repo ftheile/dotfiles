@@ -26,9 +26,8 @@ GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto verbose name"
 GIT_PS1_HIDE_IF_PWD_IGNORED=1
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
-if [ -d "~/.local/bin" ] ; then
-    PATH="~/.local/bin:$PATH"
-fi
+[ -d ~/.local/bin ] && PATH=~/.local/bin:$PATH
+export PATH
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
 [[ -r $(which neofetch) ]] && neofetch
