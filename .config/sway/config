@@ -230,10 +230,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Audio control:
-set $speakers alsa_output.pci-0000_00_1b.0.analog-stereo
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume $speakers +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume $speakers -5%
-bindsym XF86AudioMute exec pactl set-sink-mute $speakers toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Brightness control:
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
