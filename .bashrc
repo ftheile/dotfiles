@@ -31,4 +31,5 @@ PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
 export PATH
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
+. ~/.local/bin/xdg_compat.sh
 [[ -r $(which neofetch) ]] && neofetch
