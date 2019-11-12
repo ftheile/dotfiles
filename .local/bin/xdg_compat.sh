@@ -2,4 +2,4 @@
 export LESSKEY=~/.config/less/lesskey
 export LESSHISTFILE=~/.cache/less/history
 export INPUTRC=~/.config/readline/inputrc
-export HISTFILE=~/.local/share/bash/history
+export HISTFILE=~/.cache/bash/history
