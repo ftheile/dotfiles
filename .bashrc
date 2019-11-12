@@ -17,7 +17,7 @@ alias pactree='pactree --color'
 alias dmesg='dmesg --human'
 alias dd='dd status=progress'
 alias diff='diff --color'
-alias dotcfg='/usr/bin/git --git-dir=$HOME/.dotcfg/ --work-tree=$HOME'
+alias dotcfg='/usr/bin/git --git-dir=$HOME/.dotcfg --work-tree=$HOME'
 HISTCONTROL=ignoreboth
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWDIRTYSTATE=1
