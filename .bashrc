@@ -15,6 +15,7 @@ alias egrep='egrep --color'
 alias zgrep='zgrep --color'
 alias pactree='pactree --color'
 alias dmesg='dmesg --human'
+export LESS='--LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --tabs=4 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --shift .1'
 alias dd='dd status=progress'
 alias diff='diff --color'
 alias dotcfg='/usr/bin/git --git-dir=$HOME/.dotcfg --work-tree=$HOME'
@@ -30,6 +31,5 @@ PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
 export PATH
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
-export LESS='--LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --tabs=4 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --shift .1'
 . ~/.local/bin/xdg_compat.sh
 [[ -r $(which neofetch) ]] && neofetch
