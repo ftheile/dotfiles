@@ -32,4 +32,4 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
 export IDF_PATH=~/esp/esp-idf
 . ~/.local/bin/xdg_compat.sh
-[[ -r $(which neofetch) ]] && neofetch
+[[ -r $(command -v neofetch) ]] && neofetch
