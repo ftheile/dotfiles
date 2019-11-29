@@ -27,10 +27,10 @@ GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto verbose name"
 GIT_PS1_HIDE_IF_PWD_IGNORED=1
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
-[ -d ~/.local/bin ] && PATH=~/.local/bin:$PATH
-export PATH
 SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 GPG_TTY=$(tty)
+[ -d ~/.local/bin ] && PATH=~/.local/bin:$PATH
+export PATH
 export SSH_AUTH_SOCK
 export GPG_TTY
 export IDF_PATH=~/esp/esp-idf
