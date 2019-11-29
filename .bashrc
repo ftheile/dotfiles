@@ -29,8 +29,10 @@ GIT_PS1_HIDE_IF_PWD_IGNORED=1
 PROMPT_COMMAND='__git_ps1 "[\u@\h \w]" "\n\$ "'
 [ -d ~/.local/bin ] && PATH=~/.local/bin:$PATH
 export PATH
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-export GPG_TTY=$(tty)
+SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+GPG_TTY=$(tty)
+export SSH_AUTH_SOCK
+export GPG_TTY
 export IDF_PATH=~/esp/esp-idf
 . ~/.local/bin/xdg_compat.sh
 [[ -r $(command -v neofetch) ]] && neofetch
