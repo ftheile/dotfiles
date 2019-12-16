@@ -35,4 +35,4 @@ export PATH
 export SSH_AUTH_SOCK
 export GPG_TTY
 . ~/.local/bin/xdg_compat.sh
-[[ -r $(command -v neofetch) ]] && neofetch
+[[ -x $(command -v neofetch) ]] && neofetch
