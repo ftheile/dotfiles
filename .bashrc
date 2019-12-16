@@ -35,4 +35,4 @@ export SSH_AUTH_SOCK
 export GPG_TTY
 export IDF_PATH=~/esp/esp-idf
 . ~/.local/bin/xdg_compat.sh
-[[ -r $(command -v neofetch) ]] && neofetch
+[[ -x $(command -v neofetch) ]] && neofetch
