@@ -34,5 +34,5 @@ GPG_TTY=$(tty)
 export PATH
 export SSH_AUTH_SOCK
 export GPG_TTY
-. ~/.local/bin/xdg_compat.sh
+[[ -r ~/.local/bin/xdg_compat.sh ]] && source ~/.local/bin/xdg_compat.sh
 [[ -x $(command -v neofetch) ]] && neofetch
