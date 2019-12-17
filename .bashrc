@@ -33,6 +33,5 @@ GPG_TTY=$(tty)
 export PATH
 export SSH_AUTH_SOCK
 export GPG_TTY
-export IDF_PATH=~/esp/esp-idf
 [[ -r ~/.local/bin/xdg_compat.sh ]] && source ~/.local/bin/xdg_compat.sh
 [[ -x $(command -v neofetch) ]] && neofetch
