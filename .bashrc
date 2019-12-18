@@ -9,16 +9,7 @@
 [[ -r /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
 [[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
 eval "$(dircolors -b)"
-alias ls='ls -A -F --color=auto'
-alias grep='grep --color'
-alias egrep='egrep --color'
-alias zgrep='zgrep --color'
-alias pactree='pactree --color'
-alias dmesg='dmesg --human'
-alias less='less --LINE-NUMBERS --ignore-case --LONG-PROMPT --window=-4 --tabs=4 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --shift .1'
-alias dd='dd status=progress'
-alias diff='diff --color'
-alias dotcfg='/usr/bin/git --git-dir=$HOME/.dotcfg --work-tree=$HOME'
+[[ -r ~/.local/bin/bash_aliases.sh ]] && source ~/.local/bin/bash_aliases.sh
 HISTCONTROL=ignoreboth
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWDIRTYSTATE=1
