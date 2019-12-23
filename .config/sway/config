@@ -242,8 +242,8 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym --release print exec grim -g \"$(slurp)" - | wl-copy
 
 # Lid switch:
-bindswitch lid:on output $laptop_screen disable
-bindswitch lid:off output $laptop_screen enable
+bindswitch --reload lid:on output $laptop_screen disable
+bindswitch --reload lid:off output $laptop_screen enable
 
 # No applications title bars:
 default_border none
