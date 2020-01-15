@@ -1,5 +1,5 @@
 # All aliases for bash:
-alias ls='ls -A -F --color=auto'
+alias ls='ls -A -F -h --color=auto'
 alias grep='grep --color'
 alias egrep='egrep --color'
 alias zgrep='zgrep --color'
