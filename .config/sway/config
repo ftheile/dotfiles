@@ -14,11 +14,11 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term termite
+set $term alacritty
 # Your preferred application launcher
-# Note: it's recommended that you pass the final command to sway
-set $menu termite --name=launcher -e "bash -c 'compgen -c | sort -u | fzf | xargs -r swaymsg -t command exec'"
-for_window [app_id="^launcher$"] floating enable, border pixel 2
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+set $menu wofi
 
 ### Output configuration
 #
@@ -45,15 +45,20 @@ workspace 2 output $right_screen
 #
 # Example configuration:
 #
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * dpms off"' \
+#               resume 'swaymsg "output * dpms on"' \
+#          before-sleep 'swaylock -f -c 000000'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
          timeout 600 'swaylock -f -c 000000' \
          timeout 1200 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 600 seconds of inactivity, then turn off
-# your displays after another 600 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 exec mako
 
