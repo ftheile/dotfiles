@@ -1,0 +1,44 @@
+[user]
+	name = Frank Theile
+[difftool "sourcetree"]
+	cmd = 'winmergeu' \"$LOCAL\" \"$REMOTE\"
+[difftool "xmldiff"]
+	cmd = 'xmldiff' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'winmergeu' "
+	trustExitCode = true
+[alias]
+	lol = log --graph --oneline --decorate=full --all
+	diff = diff --check
+[winUpdater]
+	recentlySeenVersion = 2.25.0.windows.1
+[gui]
+	fontdiff = -family \"Fira Code\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	tabsize = 4
+[status]
+	submoduleSummary = true
+[merge]
+	conflictStyle = diff3
+[core]
+	pager = less --ignore-case --tabs=4
+[commit]
+	gpgSign = true
+[diff]
+	indentHeuristic = true
+	tool = winmerge
+[difftool "winmerge"]
+	trustExitCode = true
+	cmd = 'winmergeu' -u -e \"$LOCAL\" \"$REMOTE\"
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[merge]
+	tool = winmerge
+[mergetool "winmerge"]
+	trustExitCode = true
+	cmd = 'winmergeu' -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[submodule]
+	fetchJobs = 0
+[fetch]
+	parallel = 0
