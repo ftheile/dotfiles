@@ -10,6 +10,7 @@
 [[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
 eval "$(dircolors -b)"
 [[ -r ~/.local/bin/bash_aliases.sh ]] && source ~/.local/bin/bash_aliases.sh
+[[ -r ~/.local/bin/xdg_compat.sh ]] && source ~/.local/bin/xdg_compat.sh
 HISTCONTROL=ignoreboth
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -24,5 +25,4 @@ GPG_TTY=$(tty)
 export PATH
 export SSH_AUTH_SOCK
 export GPG_TTY
-[[ -r ~/.local/bin/xdg_compat.sh ]] && source ~/.local/bin/xdg_compat.sh
 [[ -x $(command -v neofetch) ]] && neofetch
