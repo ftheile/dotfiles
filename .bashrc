@@ -8,6 +8,7 @@
 
 [[ -r /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
 [[ -r /usr/share/doc/pkgfile/command-not-found.bash ]] && source /usr/share/doc/pkgfile/command-not-found.bash
+eval "$(dircolors -b)"
 [[ -r ~/.local/bin/bash_aliases.sh ]] && source ~/.local/bin/bash_aliases.sh
 [[ -r ~/.local/bin/xdg_compat.sh ]] && source ~/.local/bin/xdg_compat.sh
 HISTCONTROL=ignoreboth
