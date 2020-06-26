@@ -25,7 +25,6 @@
 	gpgSign = true
 [diff]
 	indentHeuristic = true
-	tool = winmerge
 [difftool "winmerge"]
 	trustExitCode = true
 	cmd = 'winmergeu' -u -e \"$LOCAL\" \"$REMOTE\"
