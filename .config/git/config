@@ -19,6 +19,7 @@
 	submoduleSummary = true
 [merge]
 	conflictStyle = diff3
+	tool = winmerge
 [core]
 	pager = less --ignore-case --tabs=4
 [commit]
@@ -32,8 +33,6 @@
 	prompt = false
 	keepBackup = false
 	keepTemporaries = false
-[merge]
-	tool = winmerge
 [mergetool "winmerge"]
 	trustExitCode = true
 	cmd = 'winmergeu' -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
