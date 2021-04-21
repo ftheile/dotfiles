@@ -22,6 +22,7 @@
 	tool = winmerge
 [core]
 	pager = less --ignore-case --tabs=4
+	editor = code --wait
 [commit]
 	gpgSign = true
 [diff]
