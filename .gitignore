@@ -1,1 +1,14 @@
-~/.cache
+# First, ignore everything
+*
+
+# Then add relevant files / directories
+!.bashrc
+!.cache/bash/.gitkeep
+!.cache/less/.gitkeep
+!.config/git
+!.config/nvim
+!.config/readline
+!.config/sway
+!.config/termite
+!.gitignore
+!.local/bin
