@@ -41,3 +41,5 @@
 	fetchJobs = 0
 [fetch]
 	parallel = 0
+[include]
+	path = credentials
