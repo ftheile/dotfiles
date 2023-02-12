@@ -1,12 +1,5 @@
 [user]
 	name = Frank Theile
-[difftool "sourcetree"]
-	cmd = 'winmergeu' \"$LOCAL\" \"$REMOTE\"
-[difftool "xmldiff"]
-	cmd = 'xmldiff' \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-	cmd = "'winmergeu' "
-	trustExitCode = true
 [alias]
 	lol = log --graph --oneline --decorate=full --all
 	diff = diff --check
@@ -27,9 +20,7 @@
 	gpgSign = true
 [diff]
 	indentHeuristic = true
-[difftool "winmerge"]
-	trustExitCode = true
-	cmd = 'winmergeu' -u -e \"$LOCAL\" \"$REMOTE\"
+	tool = winmerge
 [mergetool]
 	prompt = false
 	keepBackup = false
