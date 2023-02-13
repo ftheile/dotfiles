@@ -1,12 +1,5 @@
 [user]
 	name = Frank Theile
-[difftool "sourcetree"]
-	cmd = 'winmergeu' \"$LOCAL\" \"$REMOTE\"
-[difftool "xmldiff"]
-	cmd = 'xmldiff' \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-	cmd = "'winmergeu' "
-	trustExitCode = true
 [alias]
 	lol = log --graph --oneline --decorate=full --all
 	diff = diff --check
@@ -17,9 +10,6 @@
 	tabsize = 4
 [status]
 	submoduleSummary = true
-[merge]
-	conflictStyle = diff3
-	tool = winmerge
 [core]
 	pager = less --ignore-case --tabs=4
 	editor = code --wait
@@ -27,16 +17,16 @@
 	gpgSign = true
 [diff]
 	indentHeuristic = true
-[difftool "winmerge"]
-	trustExitCode = true
-	cmd = 'winmergeu' -u -e \"$LOCAL\" \"$REMOTE\"
+	tool = winmerge
+[difftool]
+	prompt = false
+[merge]
+	tool = winmerge
+	conflictStyle = diff3
 [mergetool]
 	prompt = false
 	keepBackup = false
 	keepTemporaries = false
-[mergetool "winmerge"]
-	trustExitCode = true
-	cmd = 'winmergeu' -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [submodule]
 	fetchJobs = 0
 [fetch]
