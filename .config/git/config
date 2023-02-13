@@ -1,7 +1,7 @@
 [user]
 	name = Frank Theile
 [alias]
-	lol = log --graph --oneline --decorate=full --all
+	lol = log --graph --oneline --all
 	diff = diff --check
 [winUpdater]
 	recentlySeenVersion = 2.25.0.windows.1
