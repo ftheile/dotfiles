@@ -32,5 +32,7 @@
 	fetchJobs = 0
 [fetch]
 	parallel = 0
+[extensions]
+	worktreeConfig = true
 [include]
 	path = credentials
